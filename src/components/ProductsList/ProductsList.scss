@@ -1,0 +1,23 @@
+.products {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 215px));
+  gap: 30px;
+
+  &__not-found {
+    margin-top: 33px;
+    grid-column: -1 / 1;
+  }
+}
+
+.wrapper {
+  margin: 26px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}

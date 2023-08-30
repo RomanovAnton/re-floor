@@ -1,0 +1,38 @@
+.list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__real {
+    display: none;
+  }
+
+  &__real:checked + div {
+    background-color: #1976d2;
+  }
+
+  &__custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a6caed;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+
+  &__text {
+    padding: 10px;
+    margin: 0;
+    user-select: none;
+  }
+}

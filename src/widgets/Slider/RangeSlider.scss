@@ -1,0 +1,41 @@
+.slider {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  &__range-container {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin: 24px 0;
+  }
+
+  &__value {
+    width: 97px;
+    height: 33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 40px;
+  }
+
+  &__value > span:first-child {
+    padding: 0 8px 0 8px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider {
+    &__value {
+      width: 127px;
+    }
+  }
+}

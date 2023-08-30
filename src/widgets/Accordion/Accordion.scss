@@ -1,0 +1,48 @@
+.accordion {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.1s ease-in-out;
+
+    &_active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    &_active {
+      max-height: 300px;
+      transition: max-height 0.3s ease-in-out;
+      overflow-y: scroll;
+    }
+  }
+}
